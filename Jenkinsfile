@@ -29,7 +29,7 @@ spec:
         }
     }
   environment {
-      IMAGE_REPO = "mahatoj/rsvp"
+      IMAGE_REPO = "jaidev.aws/rsvp"
       // Instead of DOCKERHUB_USER, use your Dockerhub name
   }
   stages {
@@ -50,7 +50,7 @@ spec:
     stage('Deploy') {
       environment {
         GIT_CREDS = credentials('github')
-        HELM_GIT_REPO_URL = "github.com/mahatoj/rsvpapp-helm-cicd.git"
+        HELM_GIT_REPO_URL = "github.com/jaidev.aws/rsvpapp-helm-cicd.git"
         GIT_REPO_EMAIL = 'jai.rock12@yahoo.com'
         GIT_REPO_BRANCH = "master"
           
